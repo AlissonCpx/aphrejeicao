@@ -71,18 +71,30 @@ class _HomeState extends State<Home> {
                       Padding(
                         padding: EdgeInsets.fromLTRB(30, 15, 30, 15),
                         child: TextField(
+                          cursorColor: Colors.redAccent,
                           controller: loginController,
                           textAlign: TextAlign.center,
-                          decoration: InputDecoration(hintText: "Login"),
+                          decoration: InputDecoration(
+                              focusedBorder: UnderlineInputBorder(
+                                  borderSide: BorderSide(
+                                      color: Colors.redAccent
+                                  )
+                              ),
+                              hintText: "Login"),
                         ),
                       ),
                       Padding(
                         padding: EdgeInsets.fromLTRB(30, 15, 30, 15),
                         child: TextField(
+                          cursorColor: Colors.redAccent,
                           controller: senhaController,
                           textAlign: TextAlign.center,
-
                           decoration: InputDecoration(
+                            focusedBorder: UnderlineInputBorder(
+                              borderSide: BorderSide(
+                                color: Colors.redAccent
+                              )
+                            ),
                             hintText: "Senha",
                             alignLabelWithHint: true,
                           ),
@@ -109,9 +121,9 @@ class _HomeState extends State<Home> {
                                     textColor: Colors.white,
                                     color: Colors.redAccent,
                                     onPressed: () async {
+
                                       Usuario user = await Util.login(loginController.text, senhaController.text);
                                       print('foi' + user.login);
-
                                     },
                                   ),
                                 )),
