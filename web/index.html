@@ -32,20 +32,32 @@
 <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
 
-<script>
-  // Your web app's Firebase configuration
-  var firebaseConfig = {
-    apiKey: "AIzaSyBSy_SCFkPdTy3s8xwEfDlWrW19bMGShJI",
-    authDomain: "aphrejeicoes.firebaseapp.com",
-    projectId: "aphrejeicoes",
-    storageBucket: "aphrejeicoes.appspot.com",
-    messagingSenderId: "371022861647",
-    appId: "1:371022861647:web:4e6d11cab9ad68f772a13a"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-</script>
+
 <body>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+
+<!-- Add for Firebase Storage: https://pub.dev/packages/firebase_storage -->
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-storage.js"></script>
+
+<!-- Add for Cloud Firestore: https://pub.dev/packages/cloud_firestore -->
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script>
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyBSy_SCFkPdTy3s8xwEfDlWrW19bMGShJI",
+      authDomain: "aphrejeicoes.firebaseapp.com",
+      projectId: "aphrejeicoes",
+      storageBucket: "aphrejeicoes.appspot.com",
+      messagingSenderId: "371022861647",
+      appId: "1:371022861647:web:4e6d11cab9ad68f772a13a"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+
+
   <!-- This script installs service_worker.js to provide PWA functionality to
        application. For more information, see:
        https://developers.google.com/web/fundamentals/primers/service-workers -->
