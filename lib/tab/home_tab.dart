@@ -10,11 +10,7 @@ class HomeTab extends StatelessWidget {
   Widget build(BuildContext context) {
     Widget listCard() {
       return Container(
-        child: Column(
-          children: [
-            SizedBox(
-              height: 20,
-            ),
+        child:
             Container(
               height: 200,
               width: 600,
@@ -38,7 +34,7 @@ class HomeTab extends StatelessWidget {
                         child: Container(
                           height: 100,
                           child: Text(
-                            "Um breve resumo sobre a rejeicao e suas possiveis solucoes e etssadsdasdasdsadadasdasdadiasdoiuoiuasouiasoiudaoiudaoiuasoiuasoiuAÇaoiudaoiuasoiuasoiuAÇaoiudaoiuasoiuasoiuAÇaoiudaoiuasoiuasoiuAÇaoiudaoiuasoiuasoiuAÇaoiudaoiuasoiuasoiuAÇaoiudaoiuasoiuasoiuAÇaoiudaoiuasoiuasoiuAÇaoiudaoiuasoiuasoiuAÇaoiudaoiuasoiuasoiuAÇaoiudaoiuasoiuasoiuAÇaoiudaoiuasoiuasoiuAÇaoiudaoiuasoiuasoiuAÇaoiudaoiuasoiuasoiuAÇaoiudaoiuasoiuasoiuAÇaoiudaoiuasoiuasoiuAÇaoiudaoiuasoiuasoiuAÇaoiudaoiuasoiuasoiuAÇaoiudaoiuasoiuasoiuAÇaoiudaoiuasoiuasoiuAÇaoiudaoiuasoiuasoiuAÇaoiudaoiuasoiuasoiuAÇaoiudaoiuasoiuasoiuAÇaoiudaoiuasoiuasoiuAÇasoiudasoiudaoiusoiudaiusdoiuasdouiasoiuaosiudaoiusdoaisudc LONGO MTLONGOOGNOOFNGOFNGOFDNGONODFNGONDFONGONFONG",
+                            "Mussum Ipsum, cacilds vidis litro abertis. Atirei o pau no gatis, per gatis num morreus. In elementis mé pra quem é amistosis quis leo. Mauris nec dolor in eros commodo tempor. Aenean aliquam molestie leo, vitae iaculis nisl. Quem num gosta di mim que vai caçá sua turmis!",
                             overflow: TextOverflow.ellipsis,
                             //softWrap: true,
                             maxLines: 6,
@@ -120,8 +116,7 @@ class HomeTab extends StatelessWidget {
                     ],
                   )),
             )
-          ],
-        ),
+
       );
     }
 

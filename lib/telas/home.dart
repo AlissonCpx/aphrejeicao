@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:myapp/tab/home_tab.dart';
+import 'package:myapp/telas/novoRegistro.dart';
 import 'package:myapp/widgets/drawer_widget.dart';
 
 class Home extends StatefulWidget {
@@ -20,7 +21,9 @@ class _HomeState extends State<Home> {
           floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
           floatingActionButton: FloatingActionButton.extended(
             elevation: 20,
-            onPressed: () {},
+            onPressed: () {
+              Navigator.of(context).push(MaterialPageRoute(builder: (context) => NovoRegisto(),));
+            },
             label: Text("Novo Registro"),
             backgroundColor: Colors.redAccent,
             tooltip: "Cadastrar uma nova solucao",
@@ -32,6 +35,7 @@ class _HomeState extends State<Home> {
           appBar: AppBar(
             backgroundColor: Colors.red,
           ),
+          body: Container(),
         ),
       ],
     );
